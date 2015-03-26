@@ -5,8 +5,8 @@
 # Site
 title: 丁山
 subtitle: 一蓑烟雨任平生，也无风雨也无晴
-description: 
-author: pybeta
+description: 一蓑烟雨任平生，也无风雨也无晴
+author: 丁山
 language: zh-Hans
 timezone:
 
@@ -88,12 +88,8 @@ disqus_shortname:
 # 社交链接，将在侧栏中显示
 social:
   GitHub: 
-  Twitter: 
   Weibo: 
-  DouBan: 
   ZhiHu: 
-
-
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
