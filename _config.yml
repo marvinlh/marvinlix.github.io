@@ -79,7 +79,7 @@ deploy:
 # =============================================================================
 
 # 多说帐号
-duoshuo_shortname: 
+duoshuo_shortname: pybeta 
 
 # DISQUS 帐号 （如果已经设置 多说 帐号，此选项将被跳过）
 disqus_shortname: 
