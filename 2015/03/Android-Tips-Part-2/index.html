@@ -32,7 +32,7 @@
 
 
 
-  <title> Hello World // 丁山 </title>
+  <title> Android Tips Part 2 // 丁山 </title>
 </head>
 
 <body>
@@ -105,7 +105,7 @@
           
           
             
-              Hello World
+              Android Tips Part 2
             
           
         </h1>
@@ -114,7 +114,7 @@
       <div class="post-meta">
         <span class="post-time">
           
-            发表于 2015-01-31
+            发表于 2015-03-23
           
         </span>
 
@@ -126,8 +126,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/01/hello-world/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/01/hello-world/"></span>
+            <a href="/2015/03/Android-Tips-Part-2/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/03/Android-Tips-Part-2/"></span>
             </a>
           </span>
           
@@ -142,7 +142,56 @@
         
 
         
-          <p>Hello, Hexo!</p>
+          <blockquote>
+<p>原文作者：<a href="http://blog.danlew.net/about/" target="_blank" rel="external">Dan Lew</a><br>原文地址：<a href="http://blog.danlew.net/2014/04/14/android-tips-round-up-part-2/" target="_blank" rel="external">Android Tips Round-Up, Part 2</a></p>
+</blockquote>
+<ul>
+<li><p><a href="http://developer.android.com/reference/android/text/format/DateUtils.html#formatDateTime(android.content.Context,%20long,%20int)" target="_blank" rel="external"><code>DateUtils.formatDateTime()</code></a></p>
+<p>  格式化日期/时间，输出为本地化格式。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/app/AlarmManager.html#setInexactRepeating(int,long,long,android.app.PendingIntent)" target="_blank" rel="external"><code>AlarmManager.setInexactRepeating</code></a></p>
+<p>  注册一个非精密的重复类型定时器，系统会通过分组来节约电量。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/text/format/Formatter.html#formatFileSize(android.content.Context,%20long)" target="_blank" rel="external"><code>Formatter.formatFileSize()</code></a></p>
+<p>  文件大小的本地化格式器。    </p>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><p><a href="http://developer.android.com/reference/android/app/ActionBar.html#hide()" target="_blank" rel="external"><code>ActionBar.hide()</code></a><code>/</code><a href="http://developer.android.com/reference/android/app/ActionBar.html#show()" target="_blank" rel="external"><code>.show()</code></a> </p>
+<p>  使用动画来<code>出现/隐藏ActionBar</code>，使得切换全屏时能够更平滑。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/text/util/Linkify.html#addLinks(android.text.Spannable,%20int)" target="_blank" rel="external"><code>Linkify.addLinks()</code></a></p>
+<p>  通过它可以控制<code>TextView</code>显示内容的链接。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/text/StaticLayout.html" target="_blank" rel="external"><code>StaticLayout</code></a></p>
+<p>  在自定义View时，方便测试text。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/app/Activity.html#onBackPressed()" target="_blank" rel="external"><code>Activity.onBackPressed()</code></a></p>
+<p>  方便处理返回键。虽然我经常不拦截返回键，但经常需要拦截返回键，从而保证正确的工作流。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/view/GestureDetector.html" target="_blank" rel="external"><code>GestureDetector</code></a></p>
+<p>  便捷的手势识别类。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/graphics/DrawFilter.html" target="_blank" rel="external"><code>DrawFilter</code></a></p>
+<p>  尽管没有调用view的draw相关方法，仍然可以通过它获取到Canvas对象。比如，自定义View时，可以设置<code>DrawFilter</code>来抗锯齿。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/app/ActivityManager.html#getMemoryClass()" target="_blank" rel="external"><code>ActivityManager.getMemoryClass()</code></a></p>
+<p>  通过它，可以获取该设备可用内存的大小。根据该大小可以方便算出App缓存的大小。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/os/SystemClock.html#sleep(long)" target="_blank" rel="external"><code>SystemClock.sleep()</code></a></p>
+<p>  这个方法就是封装了Thread.sleep方法，但是不会抛出InterruptedException。能够方便的保证sleep一段时间。经常使用它来模拟网络延时。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/view/ViewStub.html" target="_blank" rel="external"><code>ViewStub</code></a></p>
+<p>  一个轻量级的View，ViewStub是不可见的、不占用布局空间的视图，用于在运行时延迟加载布局资源. 当ViewStub可见，或者调用 inflate()函数时，才会加载布局资源.</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/util/DisplayMetrics.html#density" target="_blank" rel="external"><code>DisplayMetrics.density</code></a></p>
+<p>  你可以通过该方法获取屏幕的密度。大部分情况下，最好让系统自动处理dimen的缩放。偶尔需要处理缩放时，非常有效，特别是在自定义View时。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/util/Pair.html#create(A,%20B)" target="_blank" rel="external"><code>Pair.create()</code></a></p>
+<p>  方便的工具类。</p>
+</li>
+</ul>
 
         
       </div>
@@ -156,11 +205,11 @@
           <div class="post-nav">
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2015/04/Android-Tips-Part-1/">Android Tips Part 1</a>
-              
             </div>
 
             <div class="post-nav-next post-nav-item">
+              
+                <a href="/2015/03/Android-Tips-Part-1/">Android Tips Part 1</a>
               
             </div>
           </div>
@@ -177,8 +226,8 @@
   
     <div class="comments" id="comments">
       
-        <div class="ds-thread" data-thread-key="2015/01/hello-world/"
-             data-title="Hello World" data-url="http://pybeta.com/2015/01/hello-world/">
+        <div class="ds-thread" data-thread-key="2015/03/Android-Tips-Part-2/"
+             data-title="Android Tips Part 2" data-url="http://pybeta.com/2015/03/Android-Tips-Part-2/">
         </div>
 
       
