@@ -32,7 +32,7 @@
 
 
 
-  <title> Hello World // 丁山 </title>
+  <title> Android Tips Part 1 // 丁山 </title>
 </head>
 
 <body>
@@ -105,7 +105,7 @@
           
           
             
-              Hello World
+              Android Tips Part 1
             
           
         </h1>
@@ -114,7 +114,7 @@
       <div class="post-meta">
         <span class="post-time">
           
-            发表于 2015-01-31
+            发表于 2015-04-03
           
         </span>
 
@@ -126,8 +126,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/01/hello-world/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/01/hello-world/"></span>
+            <a href="/2015/04/Android-Tips-Part-1/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/Android-Tips-Part-1/"></span>
             </a>
           </span>
           
@@ -142,7 +142,56 @@
         
 
         
-          <p>Hello, Hexo!</p>
+          <blockquote>
+<p>原文作者：<a href="http://blog.danlew.net/about/" target="_blank" rel="external">Dan Lew</a><br>原文地址：<a href="http://blog.danlew.net/2014/03/30/android-tips-round-up-part-1/" target="_blank" rel="external">Android Tips Round-Up, Part 1</a></p>
+</blockquote>
+<ul>
+<li><p><a href="http://developer.android.com/reference/android/app/Activity.html#startActivities(android.content.Intent[])" target="_blank" rel="external"><code>Activity.startActivities()</code></a></p>
+<p>  当需要启动Activity栈中间的Activity时，非常有效。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/text/TextUtils.html#isEmpty(java.lang.CharSequence)" target="_blank" rel="external"><code>TextUtils.isEmpty()</code></a></p>
+<p>  判断字符串是否为null或者“”，经常用到的工具类。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String)" target="_blank" rel="external"><code>Html.fromHtml()</code></a></p>
+<p>  快速格式化HTML的一个方法。不是十分高效，所以我不是经常性使用，但是对于渲染从web server获取的HTML内容十分方便。</p>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li><p><a href="http://developer.android.com/reference/android/widget/TextView.html#setError%28java.lang.CharSequence%29" target="_blank" rel="external"><code>TextView.setError()</code></a></p>
+<p>  校验输入时，方便使用的提示。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html" target="_blank" rel="external"><code>Build.VERSION_CODES</code></a></p>
+<p>  不仅可以在代码中避免硬编码，而且可以区分不同Android版本特性。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/util/Log.html#getStackTraceString(java.lang.Throwable)" target="_blank" rel="external"><code>Log.getStackTraceString()</code></a></p>
+<p>  打印log时，有效的工具类。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/view/LayoutInflater.html#from%28android.content.Context%29" target="_blank" rel="external"><code>LayoutInflater.from()</code></a></p>
+<p>  获取LayoutInflater的一种简单方式。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/view/ViewConfiguration.html#getScaledTouchSlop%28%29" target="_blank" rel="external"><code>ViewConfiguration.getScaledTouchSlop()</code></a></p>
+<p>  通过ViewConfiguration.getScaledTouchSlop()获取到配置，可以确保App在Android系统中触摸事件体验的一致性。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#convertKeypadLettersToDigits%28java.lang.String%29" target="_blank" rel="external"><code>PhoneNumberUtils.convertKeypadLettersToDigits</code></a></p>
+<p>  处理电话号码的一种有效工具类。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/content/Context.html#getCacheDir%28%29" target="_blank" rel="external"><code>Context.getCacheDir()</code></a></p>
+<p>  获取App的缓存目录。非常简单，但不是所有人都知道。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/animation/ArgbEvaluator.html" target="_blank" rel="external"><code>ArgbEvaluator</code></a></p>
+<p>  转换颜色。<a href="https://plus.google.com/+DanielLew/posts/SbieMPqa2by" target="_blank" rel="external">正如Chris Banes指出的</a>，</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/view/ContextThemeWrapper.html" target="_blank" rel="external"><code>ContextThemeWrapper</code></a></p>
+<p>  更换主题十分高效。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/widget/Space.html" target="_blank" rel="external"><code>Space</code></a></p>
+<p>  draw间隔经常使用到的一个轻量级View。</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/animation/ValueAnimator.html#reverse%28%29" target="_blank" rel="external"><code>ValueAnimator.reverse()</code></a></p>
+<p>  取消动画时，依然保持流畅。</p>
+</li>
+</ul>
 
         
       </div>
@@ -156,11 +205,11 @@
           <div class="post-nav">
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2015/04/Android-Tips-Part-1/">Android Tips Part 1</a>
-              
             </div>
 
             <div class="post-nav-next post-nav-item">
+              
+                <a href="/2015/01/hello-world/">Hello World</a>
               
             </div>
           </div>
@@ -177,8 +226,8 @@
   
     <div class="comments" id="comments">
       
-        <div class="ds-thread" data-thread-key="2015/01/hello-world/"
-             data-title="Hello World" data-url="http://pybeta.com/2015/01/hello-world/">
+        <div class="ds-thread" data-thread-key="2015/04/Android-Tips-Part-1/"
+             data-title="Android Tips Part 1" data-url="http://pybeta.com/2015/04/Android-Tips-Part-1/">
         </div>
 
       
