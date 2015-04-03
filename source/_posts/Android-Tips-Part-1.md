@@ -1,5 +1,5 @@
 title: "Android Tips Part 1"
-date: 2015-04-03 11:20:02
+date: 2015-03-21 11:20:02
 tags:
 ---
 
